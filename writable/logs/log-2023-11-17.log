@@ -1,0 +1,19 @@
+INFO - 2023-11-17 13:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-17 13:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-17 13:34:48 --> Undefined variable $title
+in APPPATH\Views\mazer\layouts\auth.php on line 7.
+ 1 APPPATH\Views\mazer\layouts\auth.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\wamp64\\www\\c4-SimpleAuthLogin\\app\\Views\\mazer\\layouts\\auth.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\c4-SimpleAuthLogin\\app\\Views\\mazer\\layouts\\auth.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('mazer/layouts/auth', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('mazer/auth-login', [], true)
+ 6 APPPATH\Controllers\Auth.php(101): view('mazer/auth-login')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\c4-SimpleAuthLogin\\public\\index.php')
+INFO - 2023-11-17 13:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

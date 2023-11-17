@@ -94,9 +94,12 @@ class Auth extends BaseController
 		}
 
 		// SET UP VIEWS
-		echo view('templates/header');
-		echo view('login',['config' => $this->config]);
-		echo view('templates/footer');
+		// echo view('templates/header');
+		// echo view('login',['config' => $this->config]);
+		// echo view('templates/footer');
+		$title = 'Login';
+		echo view('mazer/auth-login', compact('title'));
+
 	}
 
 	/*
@@ -194,7 +197,7 @@ class Auth extends BaseController
 	{
 	
 		// PASS TO LIBRARY
-		$this->Auth->activateuser($id, $token);		
+		$this->Auth->activateuser($id, $token);	
 
 		return redirect()->to('/');
 	}

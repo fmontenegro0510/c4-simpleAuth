@@ -28,7 +28,9 @@ $routes->setAutoRoute(true);
  * --------------------------------------------------------------------
  */
 
-$routes->match(['get', 'post'], 'login', 'Auth::login'); // LOGIN PAGE
+ $routes->match(['get', 'post'], 'login', 'Auth::login'); // LOGIN PAGE
+
+// $routes->match(['get', 'post'], 'login', 'Auth::login'); // LOGIN PAGE
 $routes->match(['get', 'post'], 'register', 'Auth::register'); // REGISTER PAGE
 $routes->match(['get', 'post'], 'forgotpassword', 'Auth::forgotPassword'); // FORGOT PASSWORD
 $routes->match(['get', 'post'], 'activate/(:num)/(:any)', 'Auth::activateUser/$1/$2'); // INCOMING ACTIVATION TOKEN FROM EMAIL
